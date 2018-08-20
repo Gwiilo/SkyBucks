@@ -1,0 +1,23 @@
+name: ServerSkyBucks
+version: 1.1
+description: This plugin creates a spendable SkyBuck-based currency!
+main: Main
+author: Gwiilo
+commands:
+  SkyBuck:
+    description: Main plugin command.
+permissions:
+  ServerSkyBucks.adminhelp:
+    default: op
+  ServerSkyBucks.reload:
+    default: op
+  ServerSkyBucks.balanceothers:
+    default: op
+  ServerSkyBucks.payothers:
+    default: op
+  ServerSkyBucks.addSkyBucks:
+    default: op
+  ServerSkyBucks.removeSkyBucks:
+    default: op
+  ServerSkyBucks.setSkyBucks:
+    default: op

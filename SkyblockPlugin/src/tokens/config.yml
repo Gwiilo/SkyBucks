@@ -1,0 +1,216 @@
+## Configuration options for ServerSkyBucks
+Options:
+
+    ## Prefix used for all messages sent by the plugin.
+    Prefix: '&8[&bᵴkyßucks&8]'
+
+    ## Amount of SkyBucks that a player starts with.
+    StartingAmount: 0
+
+    ## Number of slots in /SkyBuck shop
+    ## HUGE NOTE: Number of slots must be a multiple of 9 (9/18/27/36/45/54)
+    ## Additionally, YOU MUST have an item defined in "Shop" for each slot number in "NumberOfSlots".
+    ## Otherwise, you will receive an error upon using /SkyBuck shop!
+    NumberOfSlots: 9
+
+    ## Title of the /SkyBuck shop inventory window.
+    Title: '&0ServerSkyBucks - Shop'
+
+    ## Should mobs have a chance, defined by you, to give/drop ServerSkyBucks to players that kill them
+    EnableSkyBuckDrops: false
+
+## Configuration of /SkyBuck shop
+##   '0': - Slot number/space in /SkyBuck shop. DO NOT have same number twice!
+##       Item: DIAMOND_SWORD  - Item that is shown in the inventory slot
+##       Meta: 0 - Used for colored wool/glass/god apples (ex: 322:1). Normal items should have Meta = 0.
+##       Amount: 1 - Amount of item that is shown in /SkyBuck shop (ex: a stack of diamonds = 64).
+##       DisplayName: '&b&lSuper Sword' - Name for item shown. Use ' ' to have it be the normal in-game name (ex: Diamond Sword)
+##       Price: 100 - Number of SkyBucks needed to buy the item
+##       Lore: '&cBest sword ever!' - Lore of the item shown. Use ' ' to have nothing.
+##       Commands: - Commands sent upon buying of an item. Can be multiple lines/commands, just follow format.
+##           - 'give {player} 276 1 name:&b&lSuper_Sword'
+##
+##       This above example and the command sent were created with the use of the plugin Essentials in mind.
+##       You can use any type of commands from any plugins, you just have to adjust the config accordingly and follow
+##       the proper format!
+Shop:
+  '0':
+    Item: STAINED_GLASS_PANE
+    Meta: 15
+    Amount: 1
+    DisplayName: '&8[&bᵴkyßucks&8]'
+    Price: 0
+    Lore: ''
+    Commands:
+        - ''
+  '1':
+    Item: STAINED_GLASS_PANE
+    Meta: 15
+    Amount: 1
+    DisplayName: '&8[&bᵴkyßucks&8]'
+    Price: 0
+    Lore: ''
+    Commands:
+        - ''
+  '2':
+    Item: STAINED_GLASS_PANE
+    Meta: 15
+    Amount: 1
+    DisplayName: '&8[&bᵴkyßucks&8]'
+    Price: 0
+    Lore: ''
+    Commands:
+        - ''
+  '3':
+    Item: DIAMOND_SWORD
+    Meta: 0
+    Amount: 1
+    DisplayName: '&b&lSuper Sword'
+    Price: 100
+    Lore: '&cBest sword ever!'
+    Commands:
+        - 'give {player} 276 1 name:&b&lSuper_Sword'
+  '4':
+    Item: DIAMOND_HELMET
+    Meta: 0
+    Amount: 1
+    DisplayName: '&bProt IV Set'
+    Price: 100
+    Lore: '&8Become invincible!'
+    Commands:
+        - 'give {player} 310 1 0:4'
+        - 'give {player} 311 1 0:4'
+        - 'give {player} 312 1 0:4'
+        - 'give {player} 313 1 0:4'
+  '5':
+    Item: DIAMOND
+    Meta: 0
+    Amount: 1
+    DisplayName: '&664 Diamonds'
+    Price: 100
+    Lore: '&4Click to buy'
+    Commands:
+        - 'give {player} DIAMOND 64'
+  '6':
+    Item: STAINED_GLASS_PANE
+    Meta: 15
+    Amount: 1
+    DisplayName: '&8[&bᵴkyßucks&8]'
+    Price: 0
+    Lore: ''
+    Commands:
+        - ''
+  '7':
+    Item: STAINED_GLASS_PANE
+    Meta: 15
+    Amount: 1
+    DisplayName: '&8[&bᵴkyßucks&8]'
+    Price: 0
+    Lore: ''
+    Commands:
+        - ''
+  '8':
+    Item: STAINED_GLASS_PANE
+    Meta: 15
+    Amount: 1
+    DisplayName: '&8[&bᵴkyßucks&8]'
+    Price: 0
+    Lore: ''
+    Commands:
+        - ''
+
+## Playerdata
+##     6b73rr4d-1d87-6192-9a0d-311c7e5692865:  - UUID of player.
+##        Name: JohnDoe123  - Last known IGN of player.
+##        SkyBucks: 0  - Amount of SkyBucks said player has.
+Players:
+
+## Drop chances of ServerSkyBucks per mob!
+## Chance: 1 = guaranteed drop || Chance: -1 = disable mob from dropping ServerSkyBucks.
+## Chance: 4 = 1/4 or 25% chance || Chance: 100 = 1/100 or 1% chance, etc.
+## NumSkyBucks: Number of ServerSkyBucks given to the player upon killing that mob.
+DropChances:
+    SKELETON:
+        Chance: 1
+        NumSkyBucks: 1
+    CREEPER:
+        Chance: 1
+        NumSkyBucks: 1
+    CAVE_SPIDER:
+        Chance: 1
+        NumSkyBucks: 1
+    SPIDER:
+        Chance: 1
+        NumSkyBucks: 1
+    PIG_ZOMBIE:
+        Chance: 1
+        NumSkyBucks: 1
+    ZOMBIE:
+        Chance: 1
+        NumSkyBucks: 1
+    MAGMA_CUBE:
+        Chance: 1
+        NumSkyBucks: 1
+    SLIME:
+        Chance: 1
+        NumSkyBucks: 1
+    GHAST:
+        Chance: 1
+        NumSkyBucks: 1
+    ENDERMAN:
+        Chance: 1
+        NumSkyBucks: 1
+    SILVERFISH:
+        Chance: 1
+        NumSkyBucks: 1
+    BLAZE:
+        Chance: 1
+        NumSkyBucks: 1
+    BAT:
+        Chance: 1
+        NumSkyBucks: 1
+    WITCH:
+        Chance: 1
+        NumSkyBucks: 1
+    IRON_GOLEM:
+        Chance: 1
+        NumSkyBucks: 1
+    PIG:
+        Chance: 1
+        NumSkyBucks: 1
+    SHEEP:
+        Chance: 1
+        NumSkyBucks: 1
+    MUSHROOM_COW:
+        Chance: 1
+        NumSkyBucks: 1
+    COW:
+        Chance: 1
+        NumSkyBucks: 1
+    CHICKEN:
+        Chance: 1
+        NumSkyBucks: 1
+    SQUID:
+        Chance: 1
+        NumSkyBucks: 1
+    WOLF:
+        Chance: 1
+        NumSkyBucks: 1
+    OCELOT:
+        Chance: 1
+        NumSkyBucks: 1
+    VILLAGER:
+        Chance: 1
+        NumSkyBucks: 1
+    ENDER_DRAGON:
+        Chance: 1
+        NumSkyBucks: 1
+    HORSE:
+        Chance: 1
+        NumSkyBucks: 1
+    SNOWMAN:
+        Chance: 1
+        NumSkyBucks: 1
+    WITHER:
+        Chance: 1
+        NumSkyBucks: 1
